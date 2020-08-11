@@ -1,0 +1,12 @@
+plugins:
+  delete_unreplied_topics_enabled:
+    default: false
+  delete_unreplied_topics_categories:
+    type: category_list
+    default: ""
+  delete_unreplied_topics_days:
+    default: 30
+    min: 1
+    max: 9999
+  delete_unreplied_topics_dry_run:
+    default: false
