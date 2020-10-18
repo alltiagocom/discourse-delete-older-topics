@@ -16,9 +16,9 @@ module Jobs
           next if t.category.topic_id == t.id # skip category intro topics
 
           if SiteSetting.delete_unreplied_topics_dry_run?
-            Rails.logger.error("DeleteUnrepliedTopics would remove Topic ID #{t.id} (dry run mode)")
+            Rails.logger.error("DeleteUnrepliedTopics would remove Topic ID #{t.id} (#{t.title}) (dry run mode)")
           else
-            Rails.logger.error("DeleteUnrepliedTopics removing Topic ID #{t.id}")
+            Rails.logger.error("DeleteUnrepliedTopics removing Topic ID #{t.id} (#{t.title})")
             post = t.posts.first
             PostDestroyer.new(Discourse.system_user, post).destroy
           end
