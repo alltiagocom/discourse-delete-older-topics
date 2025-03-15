@@ -1,6 +1,6 @@
 en:
   site_settings:
-    delete_unreplied_topics_enabled: 'Enable Delete Unreplied Topics plugin.'
-    delete_unreplied_topics_categories: 'Delete Unreplied Topics in these Categories.'
-    delete_unreplied_topics_days: 'Delete Unreplied Topics older than X days.'
-    delete_unreplied_topics_dry_run: 'Delete Unreplied Topics in Dry Run Mode (only log actions).'
+    delete_unreplied_topics_enabled: 'Enable Delete Old Topics plugin.'
+    delete_unreplied_topics_categories: 'Delete Old Topics in these Categories.'
+    delete_unreplied_topics_days: 'Delete Topics older than N days.'
+    delete_unreplied_topics_dry_run: 'Delete Old Topics in Dry Run Mode (only log actions).'
