@@ -1,9 +1,6 @@
-# Delete Unreplied Topics
+# Delete Older Topics
 
-This plugin deletes topics 
+This plugin deletes topics that are older than N days, in designated categories
 
-- that exist for over X days
-- that have no replies
-- in designated categories
-
-
+Original plugin:
+https://github.com/communiteq/discourse-delete-unreplied-topics
