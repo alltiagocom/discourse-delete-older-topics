@@ -11,7 +11,6 @@ module Jobs
 
       Topic.where(category_id: SiteSetting.delete_unreplied_topics_categories.split('|'))
         .where("created_at < '#{days.to_i.days.ago}'")
-        .where("posts_count = 1")
         .each do |t| 
           next if t.category.topic_id == t.id # skip category intro topics
 
