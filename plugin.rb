@@ -1,5 +1,5 @@
 # name: discourse-delete-unreplied-topics
-# about: Deletes topics without replies older than x days in certain categories`
+# about: Deletes topics older than N days in certain categories`
 # version: 0.1
 # required_version: 2.5.0
 # author: DiscourseHosting
